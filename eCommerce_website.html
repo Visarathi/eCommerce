@@ -1,0 +1,1507 @@
+#login Page
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Login</title>
+    <style type="text/css">
+      a,
+      a:focus,
+      a:hover {
+      color: #fff;
+      }
+
+      /* Custom default button */
+      .btn-default,
+      .btn-default:hover,
+      .btn-default:focus {
+      color: #333;
+      text-shadow: none; /* Prevent inheritence from `body` */
+      background-color: #fff;
+      border: 1px solid #fff;
+      }
+      
+
+
+      /*
+      * Base structure
+      */
+
+      html,
+      body {
+      /*css for full size background image*/
+      background: url(https://images.unsplash.com/photo-1562952306-d06754dbad10?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8YXBwbGUlMjBwcm9kdWN0c3xlbnwwfHwwfGJsYWNr&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      
+      height: 100%;
+      background-color: #060;
+      color: #fff;
+      text-align: center;
+      text-shadow: 0 1px 3px rgba(0,0,0,.5);
+      
+      }
+
+      /* Extra markup and styles for table-esque vertical and horizontal centering */
+      .site-wrapper {
+      display: table;
+      width: 100%;
+      height: 100%; /* For at least Firefox */
+      min-height: 100%;
+      -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+              box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+      }
+      .site-wrapper-inner {
+      display: table-cell;
+      vertical-align: top;
+      }
+      .cover-container {
+      margin-right: auto;
+      margin-left: auto;
+      }
+
+      /* Padding for spacing */
+      .inner {
+      padding: 30px;
+      }
+
+
+      /*
+      * Header
+      */
+      .masthead-brand {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      }
+
+      .masthead-nav > li {
+      display: inline-block;
+      }
+      .masthead-nav > li + li {
+      margin-left: 20px;
+      }
+      .masthead-nav > li > a {
+      padding-right: 0;
+      padding-left: 0;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff; /* IE8 proofing */
+      color: rgba(255,255,255,.95);
+      border-bottom: 2px solid transparent;
+      }
+      .masthead-nav > li > a:hover,
+      .masthead-nav > li > a:focus {
+      background-color: transparent;
+      border-bottom-color: #a9a9a9;
+      border-bottom-color: rgba(255,255,255,.25);
+      }
+      .masthead-nav > .active > a,
+      .masthead-nav > .active > a:hover,
+      .masthead-nav > .active > a:focus {
+      color: #fff;
+      border-bottom-color: #fff;
+      }
+
+      @media (min-width: 768px) {
+      .masthead-brand {
+          float: left;
+      }
+      .masthead-nav {
+          float: right;
+      }
+      }
+
+
+      /*
+      * Cover
+      */
+
+      .cover {
+      padding: 0 20px;
+      }
+      .cover .btn-lg {
+      padding: 10px 20px;
+      font-weight: bold;
+      }
+
+
+      /*
+      * Footer
+      */
+
+      .mastfoot {
+      color: #999; /* IE8 proofing */
+      color: rgba(255,255,255,.5);
+      }
+
+
+      /*
+      * Affix and center
+      */
+
+      @media (min-width: 768px) {
+      /* Pull out the header and footer */
+      .masthead {
+          position: fixed;
+          top: 0;
+      }
+      .mastfoot {
+          position: fixed;
+          bottom: 0;
+      }
+      /* Start the vertical centering */
+      .site-wrapper-inner {
+          vertical-align: middle;
+      }
+      /* Handle the widths */
+      .masthead,
+      .mastfoot,
+      .cover-container {
+          width: 100%; /* Must be percentage or pixels for horizontal alignment */
+      }
+      }
+
+      @media (min-width: 992px) {
+      .masthead,
+      .mastfoot,
+      .cover-container {
+          width: 700px;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand">Login</a>
+      <form class="form-inline">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign Up</button>
+      </form>
+    </nav>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-8 col-xl-6">
+              <div class="row">
+                <div class="col text-center">
+                  <h1>Welcome to Apple!</h1>
+                  <p>Buy your own Technology World!</p>
+                </div>
+              </div>
+            </div>
+
+        <section>
+            <div class="row align-items-center mt-4">
+                <div class="col">
+                <input type="email" class="form-control" placeholder="Email">
+                </div>
+            </div>
+            <div class="row align-items-center mt-4">
+                <div class="col">
+                    <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <div class="col">
+                    <input type="password" class="form-control" placeholder="Confirm Password">
+                </div>
+            </div>
+            <div class="row justify-content-start mt-4">
+                <div class="col">
+                    <button class="btn btn-primary mt-4">Login</button>
+                    <br>
+                    <a href="SignUp.html">Don't have an account?Sign Up here.</a>
+                </div>
+            </div>
+    
+        </section>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</html>
+
+
+#SignUp Page
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>SignUp</title>
+    <style type="text/css">
+      a,
+      a:focus,
+      a:hover {
+      color: #fff;
+      }
+
+      /* Custom default button */
+      .btn-default,
+      .btn-default:hover,
+      .btn-default:focus {
+      color: #333;
+      text-shadow: none; /* Prevent inheritence from `body` */
+      background-color: #fff;
+      border: 1px solid #fff;
+      }
+      
+
+
+      /*
+      * Base structure
+      */
+
+      html,
+      body {
+      /*css for full size background image*/
+      background: url(https://images.unsplash.com/photo-1562952306-d06754dbad10?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8YXBwbGUlMjBwcm9kdWN0c3xlbnwwfHwwfGJsYWNr&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      
+      height: 100%;
+      background-color: #060;
+      color: #fff;
+      text-align: center;
+      text-shadow: 0 1px 3px rgba(0,0,0,.5);
+      
+      }
+
+      /* Extra markup and styles for table-esque vertical and horizontal centering */
+      .site-wrapper {
+      display: table;
+      width: 100%;
+      height: 100%; /* For at least Firefox */
+      min-height: 100%;
+      -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+              box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+      }
+      .site-wrapper-inner {
+      display: table-cell;
+      vertical-align: top;
+      }
+      .cover-container {
+      margin-right: auto;
+      margin-left: auto;
+      }
+
+      /* Padding for spacing */
+      .inner {
+      padding: 30px;
+      }
+
+
+      /*
+      * Header
+      */
+      .masthead-brand {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      }
+
+      .masthead-nav > li {
+      display: inline-block;
+      }
+      .masthead-nav > li + li {
+      margin-left: 20px;
+      }
+      .masthead-nav > li > a {
+      padding-right: 0;
+      padding-left: 0;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff; /* IE8 proofing */
+      color: rgba(255,255,255,.95);
+      border-bottom: 2px solid transparent;
+      }
+      .masthead-nav > li > a:hover,
+      .masthead-nav > li > a:focus {
+      background-color: transparent;
+      border-bottom-color: #a9a9a9;
+      border-bottom-color: rgba(255,255,255,.25);
+      }
+      .masthead-nav > .active > a,
+      .masthead-nav > .active > a:hover,
+      .masthead-nav > .active > a:focus {
+      color: #fff;
+      border-bottom-color: #fff;
+      }
+
+      @media (min-width: 768px) {
+      .masthead-brand {
+          float: left;
+      }
+      .masthead-nav {
+          float: right;
+      }
+      }
+
+
+      /*
+      * Cover
+      */
+
+      .cover {
+      padding: 0 20px;
+      }
+      .cover .btn-lg {
+      padding: 10px 20px;
+      font-weight: bold;
+      }
+
+
+      /*
+      * Footer
+      */
+
+      .mastfoot {
+      color: #999; /* IE8 proofing */
+      color: rgba(255,255,255,.5);
+      }
+
+
+      /*
+      * Affix and center
+      */
+
+      @media (min-width: 768px) {
+      /* Pull out the header and footer */
+      .masthead {
+          position: fixed;
+          top: 0;
+      }
+      .mastfoot {
+          position: fixed;
+          bottom: 0;
+      }
+      /* Start the vertical centering */
+      .site-wrapper-inner {
+          vertical-align: middle;
+      }
+      /* Handle the widths */
+      .masthead,
+      .mastfoot,
+      .cover-container {
+          width: 100%; /* Must be percentage or pixels for horizontal alignment */
+      }
+      }
+
+      @media (min-width: 992px) {
+      .masthead,
+      .mastfoot,
+      .cover-container {
+          width: 700px;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="https://images.unsplash.com/photo-1576071574325-77b9333188b0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=60&q=90" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+              <a class="nav-link" href="coverpage.html">Home
+                  <span class="sr-only">(current)</span>
+              </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="index.html">Products</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="SignUp.html">Sign Up</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="test.html">Login</a>
+          </li>
+          </ul>
+      </div>
+      </div>
+    </nav>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-8 col-xl-6">
+        <div class="row">
+          <div class="col text-center">
+            <h1>Welcome to Apple!</h1>
+            <p>Buy your own Technology World!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <section>
+        <div class="row align-items-center mt-4">
+          <div class="col">
+            <input type="email" class="form-control" placeholder="Email">
+          </div>
+        </div>
+        <div class="row align-items-center mt-4">
+          <div class="col">
+            <input type="Username" class="form-control" placeholder="Username">
+          </div>
+        </div>
+
+        <div class="row align-items-center mt-4">
+          <div class="col">
+            <input type="password" class="form-control" placeholder="Password">
+          </div>
+          <div class="col">
+            <input type="password" class="form-control" placeholder="Confirm Password">
+          </div>
+        </div>
+        <div class="row justify-content-start mt-4">
+          <div class="col">
+            <button class="btn btn-primary mt-4">SignUp</button>
+            <br>
+            <a href="test.html">Already have an account?Login here..</a>
+          </div>
+        </div>
+      
+      </section>
+      
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</html>
+
+
+#Home Page
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Home</title>
+
+    <style type="text/css">
+        a,
+        a:focus,
+        a:hover {
+        color: #fff;
+        }
+
+        /* Custom default button */
+        .btn-default,
+        .btn-default:hover,
+        .btn-default:focus {
+        color: #333;
+        text-shadow: none; /* Prevent inheritence from `body` */
+        background-color: #fff;
+        border: 1px solid #fff;
+        }
+
+
+        /*
+        * Base structure
+        */
+
+        html,
+        body {
+        /*css for full size background image*/
+        background: url(https://images.unsplash.com/photo-1562307534-a03738d2a81a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        
+        height: 100%;
+        background-color: #060;
+        color: #fff;
+        text-align: center;
+        text-shadow: 0 1px 3px rgba(0,0,0,.5);
+        
+        }
+
+        /* Extra markup and styles for table-esque vertical and horizontal centering */
+        .site-wrapper {
+        display: table;
+        width: 100%;
+        height: 100%; /* For at least Firefox */
+        min-height: 100%;
+        -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+                box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+        }
+        .site-wrapper-inner {
+        display: table-cell;
+        vertical-align: top;
+        }
+        .cover-container {
+        margin-right: auto;
+        margin-left: auto;
+        }
+
+        /* Padding for spacing */
+        .inner {
+        padding: 30px;
+        }
+
+
+        /*
+        * Header
+        */
+        .masthead-brand {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        }
+
+        .masthead-nav > li {
+        display: inline-block;
+        }
+        .masthead-nav > li + li {
+        margin-left: 20px;
+        }
+        .masthead-nav > li > a {
+        padding-right: 0;
+        padding-left: 0;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff; /* IE8 proofing */
+        color: rgba(255,255,255,.95);
+        border-bottom: 2px solid transparent;
+        }
+        .masthead-nav > li > a:hover,
+        .masthead-nav > li > a:focus {
+        background-color: transparent;
+        border-bottom-color: #a9a9a9;
+        border-bottom-color: rgba(255,255,255,.25);
+        }
+        .masthead-nav > .active > a,
+        .masthead-nav > .active > a:hover,
+        .masthead-nav > .active > a:focus {
+        color: #fff;
+        border-bottom-color: #fff;
+        }
+
+        @media (min-width: 768px) {
+        .masthead-brand {
+            float: left;
+        }
+        .masthead-nav {
+            float: right;
+        }
+        }
+
+
+        /*
+        * Cover
+        */
+
+        .cover {
+        padding: 0 20px;
+        }
+        .cover .btn-lg {
+        padding: 10px 20px;
+        font-weight: bold;
+        }
+
+
+        /*
+        * Footer
+        */
+
+        .mastfoot {
+        color: #999; /* IE8 proofing */
+        color: rgba(255,255,255,.5);
+        }
+
+
+        /*
+        * Affix and center
+        */
+
+        @media (min-width: 768px) {
+        /* Pull out the header and footer */
+        .masthead {
+            position: fixed;
+            top: 0;
+        }
+        .mastfoot {
+            position: fixed;
+            bottom: 0;
+        }
+        /* Start the vertical centering */
+        .site-wrapper-inner {
+            vertical-align: middle;
+        }
+        /* Handle the widths */
+        .masthead,
+        .mastfoot,
+        .cover-container {
+            width: 100%; /* Must be percentage or pixels for horizontal alignment */
+        }
+        }
+
+        @media (min-width: 992px) {
+        .masthead,
+        .mastfoot,
+        .cover-container {
+            width: 700px;
+        }
+        }
+    </style>
+  </head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://images.unsplash.com/photo-1576071574325-77b9333188b0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=60&q=90" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="coverpage.html">Home
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="SignUp.html">Sign Up</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="test.html">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">logout</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="https://discountdukan.com/wp-content/uploads/2017/09/iPhone-8-instant-cashback-on-HDFC-cards.jpg" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.cardexpert.in/wp-content/uploads/2019/03/amex_offer_iphone_cashback-1024x556.jpg" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.gadgetbridge.com/wp-content/uploads/2019/09/Paytm-iphone.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+        <div class="cover-container">
+        <div class="inner cover">
+            <h1 class="cover-heading">Apple</h1>
+
+            <p class="lead">Buy your own Technology World!</p>
+
+            <p class="lead"><a class="btn btn-lg btn-info" href="#">Learn
+            more</a></p>
+        </div>
+    </div>
+    </div>
+</body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</html>
+
+
+#Products Page
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Products</title>
+    <style type="text/css">
+      body {
+        font-family: 'open sans';
+        overflow-x: hidden; }
+      
+      img {
+        max-width: 100%; }
+      
+      .preview {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        @media screen and (max-width: 996px) {
+          .preview {
+            margin-bottom: 20px; } }
+      
+      .preview-pic {
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1; }
+      
+      .preview-thumbnail.nav-tabs {
+        border: none;
+        margin-top: 15px; }
+        .preview-thumbnail.nav-tabs li {
+          width: 18%;
+          margin-right: 2.5%; }
+          .preview-thumbnail.nav-tabs li img {
+            max-width: 100%;
+            display: block; }
+          .preview-thumbnail.nav-tabs li a {
+            padding: 0;
+            margin: 0; }
+          .preview-thumbnail.nav-tabs li:last-of-type {
+            margin-right: 0; }
+      
+      .tab-content {
+        overflow: hidden; }
+        .tab-content img {
+          width: 100%;
+          -webkit-animation-name: opacity;
+                  animation-name: opacity;
+          -webkit-animation-duration: .3s;
+                  animation-duration: .3s; }
+      
+      .card {
+        margin-top: 50px;
+        background: #eee;
+        padding: 3em;
+        line-height: 1.5em; }
+      
+      @media screen and (min-width: 997px) {
+        .wrapper {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex; } }
+      
+      .details {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+      
+      .colors {
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1; }
+      
+      .product-title, .price, .sizes, .colors {
+        text-transform: UPPERCASE;
+        font-weight: bold; }
+      
+      .checked, .price span {
+        color: #ff9f1a; }
+      
+      .product-title, .rating, .product-description, .price, .vote, .sizes {
+        margin-bottom: 15px; }
+      
+      .product-title {
+        margin-top: 0; }
+      
+      .size {
+        margin-right: 10px; }
+        .size:first-of-type {
+          margin-left: 40px; }
+      
+      .color {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        height: 2em;
+        width: 2em;
+        border-radius: 2px; }
+        .color:first-of-type {
+          margin-left: 20px; }
+      
+      .add-to-cart, .like {
+        background: #ff9f1a;
+        padding: 1.2em 1.5em;
+        border: none;
+        text-transform: UPPERCASE;
+        font-weight: bold;
+        color: #fff;
+        -webkit-transition: background .3s ease;
+                transition: background .3s ease; }
+        .add-to-cart:hover, .like:hover {
+          background: #b36800;
+          color: #fff; }
+      
+      .not-available {
+        text-align: center;
+        line-height: 2em; }
+        .not-available:before {
+          font-family: fontawesome;
+          content: "\f00d";
+          color: #fff; }
+      
+      .orange {
+        background: #ff9f1a; }
+      
+      .green {
+        background: #85ad00; }
+      
+      .blue {
+        background: #0076ad; }
+      
+      .tooltip-inner {
+        padding: 1.3em; }
+      
+      @-webkit-keyframes opacity {
+        0% {
+          opacity: 0;
+          -webkit-transform: scale(3);
+                  transform: scale(3); }
+        100% {
+          opacity: 1;
+          -webkit-transform: scale(1);
+                  transform: scale(1); } }
+      
+      @keyframes opacity {
+        0% {
+          opacity: 0;
+          -webkit-transform: scale(3);
+                  transform: scale(3); }
+        100% {
+          opacity: 1;
+          -webkit-transform: scale(1);
+                  transform: scale(1); } }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand">Products</a>
+        <form class="form-inline">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign Up</button>
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">login</button>
+        </form>
+    </nav>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="https://images.unsplash.com/photo-1576071574325-77b9333188b0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=60&q=90" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+     <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="coverpage.html">Home
+                  <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <div class="container">
+        <div class="card-group">
+            <div class="card">
+            <img src="https://images.unsplash.com/photo-1565536421961-1f165e0c981e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">iPhone X</h5>
+                <h6>Apple Products</h6>
+                <p class="card-text">Apple iPhone X is the latest iPhone to mark Apple's 10th anniversary. It is powered by Apple's latest A11 Bionic chip. It comes with 5.8 inch SuperRetina Display,Dolby vision and HRD10 and Dual 12MP rear cameras one wide-angle with f/1.8 aperture. Dual core Neural engine for face ID.
+                </p>
+            </div>
+            <div class="card-footer">
+                <botton class="btn btn-primary">View Details</botton>
+            </div>
+            </div>
+            <div class="card">
+            <img src="https://images.unsplash.com/photo-1491336238524-c990bd671778?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Mac Book</h5>
+                <h6>Apple Products</h6>
+                <p class="card-text">With its brilliant 16-inch Retina display, 8-core processors, next-gen pro graphics, even better thermal design, new Magic Keyboard, six-speaker sound system, 100Wh battery, up to 8TB of storage and 64GB of fast memory, the 16-inch MacBook Pro is the world's best pro notebook.</p>
+            </div>
+            <div class="card-footer">
+                <botton class="btn btn-primary">View Details</botton>
+            </div>
+            </div>
+            <div class="card">
+            <img src="https://images.unsplash.com/photo-1600183042195-fa3f15d427e9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Apple ear pods</h5>
+                <h6>Apple Products</h6>
+                <p class="card-text">AirPods feature a built-in microphone that filters out background noise, which allows phone calls and talking to Apple's digital assistant, Siri.</p>
+            </div>
+            <div class="card-footer">
+                <botton class="btn btn-primary">View Details</botton>
+            </div>
+            </div>
+        </div>
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+        <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+        -->
+    </div>
+  </body>
+</html>
+
+
+#View Details Page
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <title>View Detail</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <style type="text/css">body {
+        font-family: 'open sans';
+        overflow-x: hidden; }
+      
+      img {
+        max-width: 100%; }
+      
+      .preview {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        @media screen and (max-width: 996px) {
+          .preview {
+            margin-bottom: 20px; } }
+      
+      .preview-pic {
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1; }
+      
+      .preview-thumbnail.nav-tabs {
+        border: none;
+        margin-top: 15px; }
+        .preview-thumbnail.nav-tabs li {
+          width: 18%;
+          margin-right: 2.5%; }
+          .preview-thumbnail.nav-tabs li img {
+            max-width: 100%;
+            display: block; }
+          .preview-thumbnail.nav-tabs li a {
+            padding: 0;
+            margin: 0; }
+          .preview-thumbnail.nav-tabs li:last-of-type {
+            margin-right: 0; }
+      
+      .tab-content {
+        overflow: hidden; }
+        .tab-content img {
+          width: 100%;
+          -webkit-animation-name: opacity;
+                  animation-name: opacity;
+          -webkit-animation-duration: .3s;
+                  animation-duration: .3s; }
+      
+      .card {
+        margin-top: 50px;
+        background: #eee;
+        padding: 3em;
+        line-height: 1.5em; }
+      
+      @media screen and (min-width: 997px) {
+        .wrapper {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex; } }
+      
+      .details {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+      
+      .colors {
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1; }
+      
+      .product-title, .price, .sizes, .colors {
+        text-transform: UPPERCASE;
+        font-weight: bold; }
+      
+      .checked, .price span {
+        color: #ff9f1a; }
+      
+      .product-title, .rating, .product-description, .price, .vote, .sizes {
+        margin-bottom: 15px; }
+      
+      .product-title {
+        margin-top: 0; }
+      
+      .size {
+        margin-right: 10px; }
+        .size:first-of-type {
+          margin-left: 40px; }
+      
+      .color {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        height: 2em;
+        width: 2em;
+        border-radius: 2px; }
+        .color:first-of-type {
+          margin-left: 20px; }
+      
+      .add-to-cart, .like {
+        background: #ff9f1a;
+        padding: 1.2em 1.5em;
+        border: none;
+        text-transform: UPPERCASE;
+        font-weight: bold;
+        color: #fff;
+        -webkit-transition: background .3s ease;
+                transition: background .3s ease; }
+        .add-to-cart:hover, .like:hover {
+          background: #b36800;
+          color: #fff; }
+      
+      .not-available {
+        text-align: center;
+        line-height: 2em; }
+        .not-available:before {
+          font-family: fontawesome;
+          content: "\f00d";
+          color: #fff; }
+      
+      .orange {
+        background: #ff9f1a; }
+      
+      .green {
+        background: #85ad00; }
+      
+      .blue {
+        background: #0076ad; }
+      
+      .tooltip-inner {
+        padding: 1.3em; }
+      
+      @-webkit-keyframes opacity {
+        0% {
+          opacity: 0;
+          -webkit-transform: scale(3);
+                  transform: scale(3); }
+        100% {
+          opacity: 1;
+          -webkit-transform: scale(1);
+                  transform: scale(1); } }
+      
+      @keyframes opacity {
+        0% {
+          opacity: 0;
+          -webkit-transform: scale(3);
+                  transform: scale(3); }
+        100% {
+          opacity: 1;
+          -webkit-transform: scale(1);
+                  transform: scale(1); } }
+    </style>
+        
+  </head>
+
+  <body>
+    
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand">View details</a>
+        <form class="form-inline">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">My Cart</button>
+        </form>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://images.unsplash.com/photo-1576071574325-77b9333188b0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=60&q=90" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+         <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="coverpage.html">Home
+                      <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+	
+	<div class="container">
+		<div class="card">
+			<div class="container-fliud">
+				<div class="wrapper row">
+					<div class="preview col-md-6">
+						
+						<div class="preview-pic tab-content">
+						  <div class="tab-pane active" id="pic-1"><img src="https://images.unsplash.com/photo-1565536421961-1f165e0c981e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" /></div>
+						  <div class="tab-pane" id="pic-2"><img src="https://images.unsplash.com/photo-1531312267124-cd1f431feb1e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" /></div>
+						  <div class="tab-pane" id="pic-3"><img src="https://images.unsplash.com/photo-1535104631072-f0e4cab96dbd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" /></div>
+						  <div class="tab-pane" id="pic-4"><img src="https://images.unsplash.com/photo-1560673840-251cc5588fae?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80" /></div>
+						  <div class="tab-pane" id="pic-5"><img src="https://images.unsplash.com/photo-1510878933023-e2e2e3942fb0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" /></div>
+						</div>
+						<ul class="preview-thumbnail nav nav-tabs">
+						  <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="https://images.unsplash.com/photo-1502096472573-eaac515392c6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80" /></a></li>
+						  <li><a data-target="#pic-2" data-toggle="tab"><img src="https://images.unsplash.com/photo-1531312267124-cd1f431feb1e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" /></a></li>
+						  <li><a data-target="#pic-3" data-toggle="tab"><img src="https://images.unsplash.com/photo-1535104631072-f0e4cab96dbd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" /></a></li>
+						  <li><a data-target="#pic-4" data-toggle="tab"><img src="https://images.unsplash.com/photo-1560673840-251cc5588fae?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80" /></a></li>
+						  <li><a data-target="#pic-5" data-toggle="tab"><img src="https://images.unsplash.com/photo-1510878933023-e2e2e3942fb0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" /></a></li>
+						</ul>
+						
+					</div>
+					<div class="details col-md-6">
+						<h3 class="product-title">iPhone X</h3>
+						<div class="rating">
+							<div class="stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<span class="review-no">41 reviews</span>
+						</div>
+						<p class="product-description">5.8 Inch SuperRetina OLED Display With 3D Touch
+              Hex-Core Apple A11 Bionic Processor
+              3GB RAM With 64/256GB ROM
+              Force Touch Technology
+              Dual 12MP ISight Camera With OIS
+              7MP Front Facing Camera
+              Face ID
+              Bluetooth 5.0
+              LTE Support
+              Water & Dust Resistant
+              Animoji
+            </p>
+						<h4 class="price">current price: <span>₹ 1,02,877.00</span></h4>
+						<p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p>
+						
+						<div class="action">
+							<button class="add-to-cart btn btn-default" type="button">add to cart</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</html>
+
+
+#About Page
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>About</title>
+    <style type="text/css">
+        a,
+        a:focus,
+        a:hover {
+        color: #fff;
+        }
+
+        /* Custom default button */
+        .btn-default,
+        .btn-default:hover,
+        .btn-default:focus {
+        color: #333;
+        text-shadow: none; /* Prevent inheritence from `body` */
+        background-color: #fff;
+        border: 1px solid #fff;
+        }
+
+
+        /*
+        * Base structure
+        */
+
+        html,
+        body {
+        /*css for full size background image*/
+        background: url(https://images.unsplash.com/photo-1562952306-d06754dbad10?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8YXBwbGUlMjBwcm9kdWN0c3xlbnwwfHwwfGJsYWNr&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        
+        height: 100%;
+        background-color: #060;
+        color: #fff;
+        text-align: center;
+        text-shadow: 0 1px 3px rgba(0,0,0,.5);
+        
+        }
+
+        /* Extra markup and styles for table-esque vertical and horizontal centering */
+        .site-wrapper {
+        display: table;
+        width: 100%;
+        height: 100%; /* For at least Firefox */
+        min-height: 100%;
+        -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+                box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+        }
+        .site-wrapper-inner {
+        display: table-cell;
+        vertical-align: top;
+        }
+        .cover-container {
+        margin-right: auto;
+        margin-left: auto;
+        }
+
+        /* Padding for spacing */
+        .inner {
+        padding: 30px;
+        }
+
+
+        /*
+        * Header
+        */
+        .masthead-brand {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        }
+
+        .masthead-nav > li {
+        display: inline-block;
+        }
+        .masthead-nav > li + li {
+        margin-left: 20px;
+        }
+        .masthead-nav > li > a {
+        padding-right: 0;
+        padding-left: 0;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff; /* IE8 proofing */
+        color: rgba(255,255,255,.95);
+        border-bottom: 2px solid transparent;
+        }
+        .masthead-nav > li > a:hover,
+        .masthead-nav > li > a:focus {
+        background-color: transparent;
+        border-bottom-color: #a9a9a9;
+        border-bottom-color: rgba(255,255,255,.25);
+        }
+        .masthead-nav > .active > a,
+        .masthead-nav > .active > a:hover,
+        .masthead-nav > .active > a:focus {
+        color: #fff;
+        border-bottom-color: #fff;
+        }
+
+        @media (min-width: 768px) {
+        .masthead-brand {
+            float: left;
+        }
+        .masthead-nav {
+            float: right;
+        }
+        }
+
+
+        /*
+        * Cover
+        */
+
+        .cover {
+        padding: 0 20px;
+        }
+        .cover .btn-lg {
+        padding: 10px 20px;
+        font-weight: bold;
+        }
+
+
+        /*
+        * Footer
+        */
+
+        .mastfoot {
+        color: #999; /* IE8 proofing */
+        color: rgba(255,255,255,.5);
+        }
+
+
+        /*
+        * Affix and center
+        */
+
+        @media (min-width: 768px) {
+        /* Pull out the header and footer */
+        .masthead {
+            position: fixed;
+            top: 0;
+        }
+        .mastfoot {
+            position: fixed;
+            bottom: 0;
+        }
+        /* Start the vertical centering */
+        .site-wrapper-inner {
+            vertical-align: middle;
+        }
+        /* Handle the widths */
+        .masthead,
+        .mastfoot,
+        .cover-container {
+            width: 100%; /* Must be percentage or pixels for horizontal alignment */
+        }
+        }
+
+        @media (min-width: 992px) {
+        .masthead,
+        .mastfoot,
+        .cover-container {
+            width: 700px;
+        }
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand">About Us</a>
+    </nav>
+    <div class="container-fluid text-center bg-grey">
+        <h2>Apple</h2>
+        <h4>Make your own Technology World!</h4>
+        <p>Apple Inc. is an American multinational technology company headquartered in Cupertino, California, that designs, develops and sells consumer electronics, computer software, and online services.
+            It is considered one of the Big Tech technology companies, alongside Amazon, Google, Microsoft, and Facebook.The company's hardware products include the iPhone smartphone, the iPad tablet computer, the Mac personal computer, the iPod portable media player, the Apple Watch smartwatch, the Apple TV digital media player, the AirPods wireless earbuds and the HomePod smart speaker.Other services include Apple Store, Genius Bar, AppleCare, Apple Pay, Apple Pay Cash, and Apple Card.
+            Apple's software includes macOS, iOS, iPadOS, watchOS, and tvOS operating systems, the iTunes media player, the Safari web browser, the Shazam music identifier and the iLife and iWork creativity and productivity suites, as well as professional applications like Final Cut Pro, Logic Pro, and Xcode. Its online services include the iTunes Store, the iOS App Store, Mac App Store, Apple Arcade, Apple Music, Apple TV+, iMessage, and iCloud. 
+            Apple was founded by Steve Jobs, Steve Wozniak, and Ronald Wayne in April 1976 to develop and sell Wozniak's Apple I personal computer, though Wayne sold his share back within 12 days. It was incorporated as Apple Computer, Inc., in January 1977, and sales of its computers, including the Apple II, grew quickly. Within a few years, Jobs and Wozniak had hired a staff of computer designers and had a production line. Apple went public in 1980 to instant financial success. 
+            Over the next few years, Apple shipped new computers featuring innovative graphical user interfaces, such as the original Macintosh in 1984, and Apple's marketing advertisements for its products received widespread critical acclaim. However, the high price of its products and limited application library caused problems, as did power struggles between executives. In 1985, Wozniak departed Apple amicably and remained an honorary employee,while Jobs and others resigned to found NeXT.
+            As the market for personal computers expanded and evolved through the 1990s, Apple lost market share to the lower-priced duopoly of Microsoft Windows on Intel PC clones. The board recruited CEO Gil Amelio to what would be a 500-day charge for him to rehabilitate the financially troubled company—reshaping it with layoffs, executive restructuring, and product focus. In 1997, he led Apple to buy NeXT, solving the desperately failed operating system strategy and bringing Jobs back.
+            Jobs regained leadership status, becoming CEO in 2000. Apple swiftly returned to profitability under the revitalizing Think different campaign, as he rebuilt Apple's status by launching the iMac in 1998, opening the retail chain of Apple Stores in 2001, and acquiring numerous companies to broaden the software portfolio. In January 2007, Jobs renamed the company Apple Inc., reflecting its shifted focus toward consumer electronics, and launched the iPhone to great critical acclaim and financial success. 
+            In August 2011, Jobs resigned as CEO due to health complications, and Tim Cook became the new CEO. Two months later, Jobs died, marking the end of an era for the company. In June 2019, Jony Ive, Apple's CDO, left the company to start his own firm, but stated he would work with Apple as its primary client.Apple's worldwide annual revenue totaled $274.5 billion for the 2020 fiscal year. Apple is the world's largest technology company by revenue and one of the world's most valuable companies.
+            It is also the world's third-largest mobile phone manufacturer after Samsung and Huawei.In August 2018, Apple became the first publicly traded U.S. company to be valued at over $1 trillion and just two years later in August 2020 became the first $2 trillion U.S. company.The company employs 137,000 full-time employees[18] and maintains 510 retail stores in 25 countries as of 2020.
+            It operates the iTunes Store, which is the world's largest music retailer. As of January 2020, more than 1.5 billion Apple products are actively in use worldwide.[20] The company also has a high level of brand loyalty and is ranked as the world's most valuable brand. However, Apple receives significant criticism regarding the labor practices of its contractors, its environmental practices and unethical business practices, including anti-competitive behavior, as well as the origins of source materials.
+        </p>
+        <div class="row text-center">
+        <div class="col-sm-4">
+            <div class="footer">
+                <img src="https://image.shutterstock.com/image-photo/kiev-ukraine-april-07-2019-260nw-1369979807.jpg" alt="">
+                <h5>Follow us on Facebook now!</h5>
+            </div>
+        </div>
+        
+    </div>
+  </body>
+</html>
+    
+    
+
